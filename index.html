@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завантаження файлів</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="file-upload-plugin.js" defer></script>
+</head>
+<body>
+    <h1>Завантаження файлів з підтримкою Drag-and-Drop</h1>
+
+    <!-- Зона для завантаження файлів -->
+    <div id="dropArea" class="drop-area">
+        Перетягніть файли сюди або натисніть для вибору
+    </div>
+
+    <!-- Зона для попереднього перегляду -->
+    <div id="previewArea" class="preview-area"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new FileUpload('dropArea', 'previewArea', {
+                maxFileSize: 5 * 1024 * 1024,  // Максимальний розмір файлу - 5MB
+                acceptedTypes: ['image/jpeg', 'image/png'],  // Допустимі формати - JPEG і PNG
+                onFileSelected: (file) => {
+                    console.log('Файл вибрано:', file.name);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

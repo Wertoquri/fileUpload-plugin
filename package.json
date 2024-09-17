@@ -1,0 +1,11 @@
+{
+  "name": "file-upload-plugin-b",
+  "version": "1.0.0",
+  "description": "This plugin allows you to integrate a file upload feature with drag-and-drop support into your project. It also includes file preview functionality and file type and size validation.",
+  "main": "file-upload-plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wertoquri",
+  "license": "ISC"
+}
