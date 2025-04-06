@@ -67,4 +67,3 @@ Copy the `file-upload-plugin.js` and `style.css` files to your project and inclu
 2. **Попередній перегляд**: After selecting or dragging files, images are automatically displayed in the preview area.
 3. **Валідація файлів**: Files are validated before upload for acceptable types and size limits.
 
-This is the entire content of the `README.md` file in one continuous section without interruptions.
